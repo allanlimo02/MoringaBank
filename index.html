@@ -32,24 +32,25 @@
             <div class="col-md-3">
                 <form name="mainForm" id="mainForm">
                     <label for="">Name: </label><br>
-                    <input type="text" id="name"><br>
+                    <input type="text" id="name" placeholder=""><br>
                     <p id="error1" style="color: red; display: none;">This field is required *</p>
                     <label for="">Innitial Deposit:</label><br>
                     <input type="number" name="" id="inBal"><br>
-                    <p id="error2" style="color: red; display: none;">This field is required *</p>
-                    <!-- withrawal -->
-                    <h3 class="h3">Make withrawal</h3>
-                    <label for="">Ammount to withraw</label><br>
-                    <input type="number" name="" id="withraw">
-                    <p id="error3" style="color: red; display: none;">This field is required *</p>
+                    <p id="error2" style="color: red; display: none;">This field is required *</p> 
                     <!-- Deposit -->
                     <h3 class="h3">Make Deposit</h3>
                     <label for="">Ammount to Deposit</label><br>
                     <input type="number" name="" id="deposit">
                     <p id="error4" style="color: red; display: none;">This field is required *</p>
+                    <br>
+                     <!-- withrawal -->
+                    <h3 class="h3">Make withrawal</h3>
+                    <label for="">Ammount to withraw</label><br>
+                    <input type="number" name="" id="withraw">
+                    <p id="error3" style="color: red; display: none;">This field is required *</p>
                     <br><br>
-                    <button class="depositbtn bg-success">Deposit</button>
-                    <button class="withrawbtn bg-info">Withraw</button>
+                    <button class="depositbtn bg-success" onclick="return depositValidator()">Deposit</button>
+                    <button class="withrawbtn bg-info" onclick="return withrawValidate()">Withraw</button>
 
                 </form>
             </div>
@@ -62,7 +63,7 @@
                     <label for="">Innitial Deposit</label>
                     <p style="color: green;" id="depositOutput"></p><br><br>
                     <label for="">New Balance</label>
-                    <p ></p>
+                    <p style="color: red;" id="newbalOutput"></p>
                 </div>
             </div>
 
