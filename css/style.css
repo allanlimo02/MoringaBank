@@ -1,0 +1,10 @@
+body{
+    background-image: url(../assets/bank1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
