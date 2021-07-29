@@ -32,17 +32,21 @@
             <div class="col-md-3">
                 <form name="mainForm" id="mainForm">
                     <label for="">Name: </label><br>
-                    <input type="text" id="name"><br><br>
+                    <input type="text" id="name"><br>
+                    <p id="error1" style="color: red; display: none;">This field is required *</p>
                     <label for="">Innitial Deposit:</label><br>
-                    <input type="number" name="" id="inBal"><br><br>
+                    <input type="number" name="" id="inBal"><br>
+                    <p id="error2" style="color: red; display: none;">This field is required *</p>
                     <!-- withrawal -->
                     <h3 class="h3">Make withrawal</h3>
                     <label for="">Ammount to withraw</label><br>
                     <input type="number" name="" id="withraw">
+                    <p id="error3" style="color: red; display: none;">This field is required *</p>
                     <!-- Deposit -->
                     <h3 class="h3">Make Deposit</h3>
                     <label for="">Ammount to Deposit</label><br>
                     <input type="number" name="" id="deposit">
+                    <p id="error4" style="color: red; display: none;">This field is required *</p>
                     <br><br>
                     <button class="depositbtn bg-success">Deposit</button>
                     <button class="withrawbtn bg-info">Withraw</button>
@@ -53,7 +57,7 @@
                 <div class="info">
                     <h3 style="text-align: center;">Infomation Tab</h3>
                     <label for="">Name</label><br>
-                    <input type="text" name="" id="nameOutPut">
+                    <p id="nameOutPut"></p>
                     <br><br>
                     <label for="">Innitial Deposit</label>
                     <input type="" name="" id="in-deposit"><br><br>
