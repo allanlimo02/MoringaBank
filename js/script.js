@@ -20,7 +20,7 @@
             //alert('Input  deposit amount')
             return false;
         }
-        // else alert('Deposit is okay')
+         else alert('Deposit is Successfully completed')
     }
     function withrawValidate(){
         if(userName.value ==""){
@@ -38,13 +38,22 @@
             deposit.focus()
             //alert('Input  deposit amount')
             return false;
-        }else alert("withrawal is validated")
+        }else alert("withrawal is successfily completed")
 
     }
+//Deposit calculation
     $('.depositbtn').click(function(event){
         $('#nameOutPut').append(userName.value)
         $('#depositOutput').append(inBal.value)
         var newBal=parseInt(inBal.value)+parseInt(deposit.value);
+        $('#newbalOutput').append(newBal)
+        event.preventDefault();
+    })
+// withraw calculation
+    $('.withrawbtn').click(function(event){
+        $('#nameOutPut').append(userName.value)
+        $('#depositOutput').append(inBal.value)
+        var newBal=parseInt(inBal.value)-parseInt(withraw.value);
         $('#newbalOutput').append(newBal)
         event.preventDefault();
     })
