@@ -43,3 +43,9 @@ label{
     color: black;
     
 }
+button{
+    border:solid transparent 3px;
+    border-radius: 10px;
+    color: white;
+    
+}
